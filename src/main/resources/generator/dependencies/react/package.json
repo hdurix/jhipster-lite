@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@cypress/react": "5.12.4",
-    "@cypress/vite-dev-server": "2.2.2",
+    "@cypress/vite-dev-server": "2.2.3",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.4",
     "@testing-library/user-event": "14.0.4",
