@@ -33,7 +33,12 @@
       @propertyDeleted="deleteProperty"
     />
 
-    <ProjectActionsVue :folderPath="folderPath" @operationStarted="operationStarted()" @operationEnded="operationEnded()">
+    <ProjectActionsVue
+      :folderPath="folderPath"
+      :isPrettierButtonEnabled="isApplied('prettier')"
+      @operationStarted="operationStarted()"
+      @operationEnded="operationEnded()"
+    >
       <div class="jhlite-vertical-space--slot">
         <button
           class="jhlite-button -block"

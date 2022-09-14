@@ -370,7 +370,9 @@ describe('Landscape', () => {
       const [appliedModules] = modules.applyAll.lastCall.args as ModulesToApply[];
       expect(appliedModules.modules.map(slug => slug.get())).toEqual(['vue']);
       expect(wrapper.find(wrappedElement('modules-apply-new-button')).attributes('disabled')).toBeDefined();
-
+      const component: any = wrapper.vm;
+      expect(component.isApplied('vue')).toBeTruthy();
+      expect(component.isApplied('angular')).toBeFalsy();
       const [message] = alertBus.success.lastCall.args;
       expect(message).toBe('Modules applied');
     });
