@@ -287,7 +287,7 @@ describe('Landscape', () => {
 
       assertSelectedConnectorsCount(wrapper, 1);
       expect(wrapper.find(wrappedElement('modules-apply-new-button')).text()).toContain('(1)');
-      expect(wrapper.find(wrappedElement('modules-apply-all-button')).text()).toContain('(2)');
+      expect(wrapper.find(wrappedElement('modules-apply-all-button')).text()).toContain('(3)');
     });
 
     it('Should not select not selectable module', async () => {
