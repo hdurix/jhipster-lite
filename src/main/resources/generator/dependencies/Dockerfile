@@ -6,7 +6,7 @@ FROM quay.io/keycloak/keycloak:19.0.2
 FROM mariadb:10.9.3
 FROM mongo:5.0.11
 FROM mysql:8.0.30
-FROM mcr.microsoft.com/mssql/server:2017-latest
+FROM mcr.microsoft.com/mssql/server:2022-latest
 FROM postgres:14.5
 FROM confluentinc/cp-zookeeper:7.2.1
 FROM confluentinc/cp-kafka:7.2.1
